@@ -1,7 +1,7 @@
 console.log(document.title);
 
 function scratchAnswer() {
-    var answerElement = this.parentNode.children[1].children[1].children[0];
+    var answerElement = this.parentNode.children[0].children[1];
     
     if (answerElement.style.textDecoration == "line-through") {
         answerElement.style.textDecoration = "none";
