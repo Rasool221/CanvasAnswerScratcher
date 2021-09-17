@@ -1,0 +1,31 @@
+{
+    "name": "Canvas Answer Scratcher",
+    "author": "Rasool Abbas",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Ever wanted to scratch out answers while taking a quiz on Canvas? Well here's your friend.",
+    "icons": {
+        "256": "images/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "cookies",
+        "tabs",
+        "activeTab",
+        "declarativeContent",
+        "<all_urls>",
+        "storage",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "content_scripts": [
+        {
+            "matches": ["https://*.instructure.com/*"],
+            "js": ["scripts/main.js"]    
+        }
+    ]
+}
