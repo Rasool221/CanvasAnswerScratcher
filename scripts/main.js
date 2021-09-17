@@ -1,5 +1,3 @@
-console.log(document.title);
-
 function scratchAnswer() {
     var answerElement = this.parentNode.children[0].children[1];
     

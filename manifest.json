@@ -11,16 +11,6 @@
         "default_icon": "images/icon.png",
         "default_popup": "popup.html"
     },
-    "permissions": [
-        "cookies",
-        "tabs",
-        "activeTab",
-        "declarativeContent",
-        "<all_urls>",
-        "storage",
-        "http://*/*",
-        "https://*/*"
-    ],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "content_scripts": [
         {
