@@ -1,1 +1,1 @@
-Coming to the Google Chrome extension store soon!
+Now officially on the Chrome extension store
